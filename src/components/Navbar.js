@@ -1,11 +1,35 @@
 import React from "react";
+import {useEffect} from "react"
 import logo from '../linux.png'
+import './Navbar.css';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faBars } from "@fortawesome/free-solid-svg-icons"
 
 const Navbar = () => {
+    const [scrolled, setScrolled] = React.useState(false);
+
+    const handleScroll=() => {
+    const offset=window.scrollY;
+    if(offset > 200 ){
+      setScrolled(true);
+    }
+    else{
+      setScrolled(false);
+    }
+  }
+
+    useEffect(() => {
+        window.addEventListener('scroll',handleScroll)
+    })
+
+    let navbarClasses=['navbar', 'navbar-expanded-lg', 'navbar-light', 'bg-dark'];
+    
+    if(scrolled){
+        navbarClasses.push('scrolled');
+    }
+
     return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-dark ">
+        <nav className={navbarClasses.join(" ")}>
         <div className="container">
         <a className="navbar-brand" href="#"> <img  className="logo" src={logo}></img></a>
     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
