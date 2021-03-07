@@ -9,7 +9,7 @@ import Particles from "react-particles-js"
 
 function App() {
   return (
-    <div>
+    <div id="main">
       <Particles
       className="particles-canvas" 
         params={{

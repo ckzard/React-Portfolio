@@ -7,8 +7,13 @@
     --primary-hover-red: #f33501;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Comfortaa', cursive;
+    
 }
 
 /****************************************Navbar************************************************/
@@ -121,7 +126,7 @@ nav ul li {
     background-color: whitesmoke;
 }
 
-.section p{
+.section h1 {
     display: flex;
     top: 0;
     left: 0;
@@ -133,4 +138,25 @@ nav ul li {
     text-align: center;
     font-family: 'Comfortaa', cursive;
     z-index: 1;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
+
+.row {
+    text-align: center;
+    padding-left: 17px;
+}
+
+/* .section p{
+    display: flex;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Comfortaa', cursive;
+    z-index: 1;
+} */

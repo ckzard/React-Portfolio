@@ -1,9 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap');
 
 
-/* .box {
-    width:80%;
-    margin:2rem 10% 0 10%;
-    height:100vh;
-    background-color:plum;
-} */
+.text {
+    display: flex;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Comfortaa', cursive;
+    z-index: 1;
+    font-size: x-large;
+    /* padding: 150px; */
+}
