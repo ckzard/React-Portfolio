@@ -1,7 +1,9 @@
 import './App.css';
-import Navbar from './components/Navbar'
-import Header from './components/Header'
-import AboutMe from './components/AboutMe'
+import Navbar from './components/Navbar/Navbar'
+import Header from './components/Header/Header'
+import AboutMe from './components/AboutMe/AboutMe'
+import Projects from './components/Projects/Projects'
+import Contact from "./components/Contact/Contact"
 import "bootstrap/dist/css/bootstrap.min.css"
 import Particles from "react-particles-js"
 
@@ -32,6 +34,8 @@ function App() {
       <Navbar />
       <Header />
       <AboutMe />
+      <Projects />
+      <Contact />
     </div>
     
   );

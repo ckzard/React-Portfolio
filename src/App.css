@@ -6,6 +6,7 @@
     --primary-red: #ef4035;
     --primary-hover-red: #f33501;
 }
+
 body {
     font-family: 'Comfortaa', cursive;
 }
@@ -47,7 +48,7 @@ nav ul li {
 }
 
 .navbar-nav > li > a:hover {
-    border-top: 0.1875rem solid var(--primary-orange);
+    border-bottom: 0.1875rem solid var(--primary-orange);
 }
 
 /**************************************Header**************************************************/
@@ -79,7 +80,8 @@ nav ul li {
 .main-info h1 {
     color: white;
     text-transform: uppercase;
-    font-size: 75px;
+    font-size: 100px;
+    font-weight: bolder;
 }
 
 
@@ -103,4 +105,32 @@ nav ul li {
     .particles-canvas {
         display: none;
     }
+}
+
+/* ************************************content **************************************** */
+
+.section {
+    border-top: solid 180px white;
+    /* border-bottom: solid 180px white; */
+    width: 80%;
+    margin:2rem 10% 0 10%;
+    max-width: 100%;
+    box-sizing: border-box;
+    min-height: 90vh;
+    font-family: 'Comfortaa', cursive;
+    background-color: whitesmoke;
+}
+
+.section p{
+    display: flex;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Comfortaa', cursive;
+    z-index: 1;
 }
