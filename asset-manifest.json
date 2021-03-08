@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/React-Portfolio/static/css/main.ab2fe60d.chunk.css",
+    "main.js": "/React-Portfolio/static/js/main.92113e76.chunk.js",
+    "main.js.map": "/React-Portfolio/static/js/main.92113e76.chunk.js.map",
+    "runtime-main.js": "/React-Portfolio/static/js/runtime-main.7c2ed3d7.js",
+    "runtime-main.js.map": "/React-Portfolio/static/js/runtime-main.7c2ed3d7.js.map",
+    "static/css/2.150d169a.chunk.css": "/React-Portfolio/static/css/2.150d169a.chunk.css",
+    "static/js/2.afa1be5f.chunk.js": "/React-Portfolio/static/js/2.afa1be5f.chunk.js",
+    "static/js/2.afa1be5f.chunk.js.map": "/React-Portfolio/static/js/2.afa1be5f.chunk.js.map",
+    "index.html": "/React-Portfolio/index.html",
+    "static/css/2.150d169a.chunk.css.map": "/React-Portfolio/static/css/2.150d169a.chunk.css.map",
+    "static/css/main.ab2fe60d.chunk.css.map": "/React-Portfolio/static/css/main.ab2fe60d.chunk.css.map",
+    "static/js/2.afa1be5f.chunk.js.LICENSE.txt": "/React-Portfolio/static/js/2.afa1be5f.chunk.js.LICENSE.txt",
+    "static/media/budget.95780a41.png": "/React-Portfolio/static/media/budget.95780a41.png",
+    "static/media/App.css": "/React-Portfolio/static/media/florian-olivo-4hbJ-eymZ1o-unsplash.74f7ff06.jpg",
+    "static/media/linux.4af9e0e1.png": "/React-Portfolio/static/media/linux.4af9e0e1.png",
+    "static/media/notetaker.d9073857.png": "/React-Portfolio/static/media/notetaker.d9073857.png",
+    "static/media/ppshot.6860e8f4.jpg": "/React-Portfolio/static/media/ppshot.6860e8f4.jpg",
+    "static/media/reactdirectory.f7ea7cfa.png": "/React-Portfolio/static/media/reactdirectory.f7ea7cfa.png",
+    "static/media/spacebook.06f46286.png": "/React-Portfolio/static/media/spacebook.06f46286.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7c2ed3d7.js",
+    "static/css/2.150d169a.chunk.css",
+    "static/js/2.afa1be5f.chunk.js",
+    "static/css/main.ab2fe60d.chunk.css",
+    "static/js/main.92113e76.chunk.js"
+  ]
+}
