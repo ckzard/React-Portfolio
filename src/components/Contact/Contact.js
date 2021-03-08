@@ -1,12 +1,33 @@
 import React from 'react'
 import './Contact.css';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faPhone, faEnvelopeOpenText, } from "@fortawesome/free-solid-svg-icons"
+import { faGithubSquare, faGit} from "@fortawesome/free-brands-svg-icons"
 
 const Contact = () => {
     return (
-        <div className="section" id="contact">
+        <div className="col-md-12">
+            <div className="section" id="contact">
             <h1> Contact </h1>
-          <p> Aspiring software developer educated at the University of Toronto St George with experience in cybersecurity, fraud analytics, and the finance industry. In the process of completing Fullstack development bootcamp at the University of Toronto, developing skills in HTML, CSS, JavaScript, Bootstrap, Node.js, React, and much more. Known as a passionate innovating problem-solver, always looking to improve applications and for leading teams to the finish line. Strives to approach problems with logical and systematic solutions, out-of-the-box thinking, and user-focused design. My passion makes me stand-out amongst candidates, which drives me to excellence.</p>
+            <div className="row">
+            <div class="col-md-6">
+            <FontAwesomeIcon icon={faPhone} style={{color: "black", fontSize: "xxx-large", marginBottom: 50}}/>
+                <p class="contactPage" style={{fontSize: "xx-large"}}>647 308 0344</p> 
+            </div>
+            <div class="col-md-6">
+            <FontAwesomeIcon icon={faEnvelopeOpenText} style={{color: "black", fontSize: "xxx-large", marginBottom: 50}}/>
+                <p class="contactPage" style={{fontSize: "xx-large"}}> chris.burns006@gmail.com </p>
+            </div>
+
+            <div class="col-md-6">
+            <FontAwesomeIcon icon={faGithubSquare} style={{color: "black", fontSize: "xxx-large", marginBottom: 50}}/>
+                <p class="contactPage" style={{fontSize: "xx-large", color: "black"}}> <a href="https://github.com/ckzard"> Github</a> </p>
+            </div>
+            </div>
+            
         </div>
+        </div>
+        
       
     )
 }

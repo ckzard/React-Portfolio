@@ -16,6 +16,8 @@ body {
     
 }
 
+a { color: inherit !important; }
+
 /****************************************Navbar************************************************/
 nav {
     z-index: 2;
@@ -142,9 +144,18 @@ nav ul li {
     padding-bottom: 50px;
 }
 
-.row {
+.row { 
+    display: flex;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    padding-left: 17px;
+    font-family: 'Comfortaa', cursive;
+    z-index: 1;
 }
 
 /* .section p{
