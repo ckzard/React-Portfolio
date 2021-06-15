@@ -8,7 +8,7 @@ import { faBars } from "@fortawesome/free-solid-svg-icons"
 const Navbar = () => {
     const [scrolled, setScrolled] = React.useState(false);
 
-    const handleScroll=() => {
+    const handleScroll= () => {
 
     const offset=window.scrollY;
 

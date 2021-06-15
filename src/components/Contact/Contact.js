@@ -8,7 +8,7 @@ const Contact = () => {
     return (
         <div className="col-md-12">
             <div className="section" id="contact">
-            <h1> Contact </h1>
+            <h1 className="typed-text"> Contact </h1>
             <div className="row">
             <div class="col-md-6">
             <FontAwesomeIcon icon={faPhone} style={{color: "black", fontSize: "xxx-large", marginBottom: 50}}/>

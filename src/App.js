@@ -6,6 +6,7 @@ import Projects from './components/Projects/Projects'
 import Contact from "./components/Contact/Contact"
 import "bootstrap/dist/css/bootstrap.min.css"
 import Particles from "react-particles-js"
+import Carosel from './components/Carosel/Carosel'
 
 function App() {
   return (
@@ -34,7 +35,7 @@ function App() {
       <Navbar />
       <Header />
       <AboutMe />
-      <Projects />
+      <Carosel />
       <Contact />
     </div>
     

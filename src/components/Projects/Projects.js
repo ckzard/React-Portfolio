@@ -1,10 +1,10 @@
 import React from 'react'
 import './Projects.css';
-import spacebook from "./spacebook.png"
-import budget from "./budget.png"
-import directory from "./reactdirectory.png"
-import notetaker from "./notetaker.png"
-import perfectpairings from "./ppshot.jpg"
+import spacebook from "../../assets/spacebook.png"
+import budget from "../../assets/budget.png"
+import directory from "../../assets/reactdirectory.png"
+import notetaker from "../../assets/notetaker.png"
+import perfectpairings from "../../assets/ppshot.jpg"
 
 const Projects = () => {
     return (
