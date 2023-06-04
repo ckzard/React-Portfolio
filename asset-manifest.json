@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/React-Portfolio/static/css/main.0d22272c.chunk.css",
+    "main.js": "/React-Portfolio/static/js/main.bd45750e.chunk.js",
+    "main.js.map": "/React-Portfolio/static/js/main.bd45750e.chunk.js.map",
+    "runtime-main.js": "/React-Portfolio/static/js/runtime-main.7c2ed3d7.js",
+    "runtime-main.js.map": "/React-Portfolio/static/js/runtime-main.7c2ed3d7.js.map",
+    "static/css/2.150d169a.chunk.css": "/React-Portfolio/static/css/2.150d169a.chunk.css",
+    "static/js/2.c9943925.chunk.js": "/React-Portfolio/static/js/2.c9943925.chunk.js",
+    "static/js/2.c9943925.chunk.js.map": "/React-Portfolio/static/js/2.c9943925.chunk.js.map",
+    "index.html": "/React-Portfolio/index.html",
+    "static/css/2.150d169a.chunk.css.map": "/React-Portfolio/static/css/2.150d169a.chunk.css.map",
+    "static/css/main.0d22272c.chunk.css.map": "/React-Portfolio/static/css/main.0d22272c.chunk.css.map",
+    "static/js/2.c9943925.chunk.js.LICENSE.txt": "/React-Portfolio/static/js/2.c9943925.chunk.js.LICENSE.txt",
+    "static/media/budget.95780a41.png": "/React-Portfolio/static/media/budget.95780a41.png",
+    "static/media/bvr-shot.f74b4431.png": "/React-Portfolio/static/media/bvr-shot.f74b4431.png",
+    "static/media/cadtracker-shot.1378bcba.png": "/React-Portfolio/static/media/cadtracker-shot.1378bcba.png",
+    "static/media/App.css": "/React-Portfolio/static/media/florian-olivo-4hbJ-eymZ1o-unsplash.74f7ff06.jpg",
+    "static/media/linux.4af9e0e1.png": "/React-Portfolio/static/media/linux.4af9e0e1.png",
+    "static/media/mewdle-shot.0f5ec571.png": "/React-Portfolio/static/media/mewdle-shot.0f5ec571.png",
+    "static/media/notetaker.d9073857.png": "/React-Portfolio/static/media/notetaker.d9073857.png",
+    "static/media/perspectify.dcf0a795.png": "/React-Portfolio/static/media/perspectify.dcf0a795.png",
+    "static/media/ppshot.6860e8f4.jpg": "/React-Portfolio/static/media/ppshot.6860e8f4.jpg",
+    "static/media/reactdirectory.f7ea7cfa.png": "/React-Portfolio/static/media/reactdirectory.f7ea7cfa.png",
+    "static/media/spacebook.06f46286.png": "/React-Portfolio/static/media/spacebook.06f46286.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7c2ed3d7.js",
+    "static/css/2.150d169a.chunk.css",
+    "static/js/2.c9943925.chunk.js",
+    "static/css/main.0d22272c.chunk.css",
+    "static/js/main.bd45750e.chunk.js"
+  ]
+}
