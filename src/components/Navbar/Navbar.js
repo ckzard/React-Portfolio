@@ -1,64 +1,64 @@
 import React from "react";
-import {useEffect} from "react"
-import logo from '../../linux.png'
+import { useEffect, useState } from "react";
 import './Navbar.css';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faBars } from "@fortawesome/free-solid-svg-icons"
 
 const Navbar = () => {
-    const [scrolled, setScrolled] = React.useState(false);
-
-    const handleScroll= () => {
-
-    const offset=window.scrollY;
-
-    if(offset > 200 ){
-      setScrolled(true);
-    }
-    else{
-      setScrolled(false);
-    }
-  }
+    const [scrolled, setScrolled] = useState(false);
+    const [isOpen, setIsOpen] = useState(false);
 
     useEffect(() => {
-        window.addEventListener('scroll',handleScroll)
-    })
+        const handleScroll = () => {
+            setScrolled(window.scrollY > 36);
+        };
 
-    let navbarClasses=['navbar', 'navbar-expand-lg', 'navbar-light', 'bg-dark'];
-    
-    if(scrolled){
-        navbarClasses.push('scrolled');
-    }
-    //navbar navbar-expanded-lg navbar-light bg-dark
-    //{navbarClasses.join(" ")}
+        const closeOnDesktop = () => {
+            if (window.innerWidth > 930) {
+                setIsOpen(false);
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        window.addEventListener('resize', closeOnDesktop);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+            window.removeEventListener('resize', closeOnDesktop);
+        };
+    }, []);
+
+    const navLinks = [
+        { href: '#home', label: 'Home' },
+        { href: '#about-me', label: 'About' },
+        { href: '#featured-work', label: 'Featured' },
+        { href: '#projects', label: 'Projects' },
+        { href: '#contact', label: 'Contact' }
+    ];
+
     return (
-        <nav className={navbarClasses.join(" ")}>
-        <div className="container">
-        <a className="navbar-brand" href="#"> <img  className="logo" src={logo}></img></a>
-    <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <FontAwesomeIcon icon={faBars} style={{color: "#fff"}}/>
-    </button>
+        <nav className={`portfolio-nav ${scrolled ? 'scrolled' : ''}`}>
+            <div className="portfolio-nav-inner">
+                <a className="brand-mark" href="#home" aria-label="Homepage">CB</a>
 
-    <div className="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul className="navbar-nav ml-auto">
-            <li className="nav-item active">
-                <a className="nav-link" href="#">Home <span className="sr-only">(current)</span></a>
-            </li>
-            <li className="nav-item">
-                <a className="nav-link" href="#about-me">About Me</a>
-            </li>
-            <li className="nav-item">
-                <a className="nav-link" href="#projects">Projects</a>
-            </li>
-            <li className="nav-item">
-                <a className="nav-link" href="#contact">Contact</a>
-            </li>
-        </ul>
-        
-    </div>
-    </div>
-        
-    </nav>
+                <button
+                    className="menu-toggle"
+                    type="button"
+                    onClick={() => setIsOpen(!isOpen)}
+                    aria-label="Toggle navigation"
+                >
+                    <FontAwesomeIcon icon={faBars} />
+                </button>
+
+                <ul className={`nav-links ${isOpen ? 'is-open' : ''}`}>
+                    {navLinks.map((link) => (
+                        <li key={link.href}>
+                            <a href={link.href} onClick={() => setIsOpen(false)}>{link.label}</a>
+                        </li>
+                    ))}
+                </ul>
+            </div>
+        </nav>
     )
 }
 

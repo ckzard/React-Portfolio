@@ -1,15 +1,59 @@
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap');
-
-img {
-    height: 10rem;
-    width: 20rem;
-    padding: 2px;
+.project-grid {
+    margin-top: 1.2rem;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
 }
 
-.card {
-    height: 10rem;
+.project-card {
+    border: 1px solid rgba(142, 174, 235, 0.25);
+    border-radius: 18px;
+    background: rgba(16, 29, 49, 0.84);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
 }
 
-.col-md-4 {
-    padding-bottom: 20px;
+.project-card img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+}
+
+.project-content {
+    padding: 1rem;
+}
+
+.project-content h3 {
+    margin: 0;
+    font-size: 1.15rem;
+}
+
+.project-content p {
+    color: #bfd0f6;
+    line-height: 1.65;
+    margin: 0.6rem 0 0.8rem;
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.45rem;
+    margin-bottom: 1rem;
+}
+
+.project-tags span {
+    border-radius: 999px;
+    font-size: 0.76rem;
+    padding: 0.33rem 0.56rem;
+    letter-spacing: 0.04em;
+    color: #9bddf5;
+    border: 1px solid rgba(125, 226, 209, 0.35);
+    background: rgba(19, 45, 58, 0.55);
+}
+
+@media (max-width: 940px) {
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
 }
