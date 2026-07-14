@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="CB logo">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#62d2ff"/>
+      <stop offset="1" stop-color="#5b83ff"/>
+    </linearGradient>
+    <linearGradient id="stroke" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.85"/>
+      <stop offset="1" stop-color="#d9ebff" stop-opacity="0.55"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="4" y="4" width="56" height="56" rx="16" fill="url(#bg)"/>
+  <rect x="4.8" y="4.8" width="54.4" height="54.4" rx="15.2" fill="none" stroke="url(#stroke)" stroke-width="1.6"/>
+
+  <path d="M24.6 21.5c-4.6 0-8.2 3.7-8.2 8.5v4.1c0 4.7 3.5 8.4 8 8.4h9.1v-5.4h-8.2c-2 0-3.5-1.5-3.5-3.4v-3.2c0-2 1.5-3.5 3.6-3.5h8.1v-5.5h-8.9z" fill="#f7fbff"/>
+  <path d="M37.6 21.5h7.9c4.1 0 7.1 2.5 7.1 6.4 0 2.4-1.1 4-2.8 4.8 2.2.7 3.5 2.6 3.5 5.3 0 4.2-3.2 6.9-7.8 6.9h-7.9V21.5zm7.1 9.2c1.6 0 2.5-.9 2.5-2.2 0-1.4-.9-2.2-2.5-2.2h-1.8v4.4h1.8zm.5 9.3c1.7 0 2.7-1 2.7-2.5 0-1.5-1-2.4-2.7-2.4h-2.3V40h2.3z" fill="#f7fbff"/>
+</svg>
