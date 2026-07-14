@@ -44,7 +44,7 @@ const Contact = () => {
                         <FontAwesomeIcon icon={faLinkedin} />
                         <div>
                             <h3>LinkedIn</h3>
-                            <p>Add your profile URL</p>
+                            <p>https://ca.linkedin.com/in/christopher-burns-x</p>
                         </div>
                     </a>
                 </div>

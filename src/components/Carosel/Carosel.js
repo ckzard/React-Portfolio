@@ -3,12 +3,29 @@ import Carousel from "react-bootstrap/Carousel";
 import Mewdle from "../../assets/mewdle-shot.png";
 import perspectify from "../../assets/perspectify.png";
 import tracker from '../../assets/cadtracker-shot.png'
-import bvr from '../../assets/bvr-shot.png'
+import cue1 from '../../assets/CUE1.jpg'
+import cue3 from '../../assets/CUE3.PNG'
+import wordsmith1 from '../../assets/Wordsmith1.PNG'
+import wordsmith2 from '../../assets/Wordsmith2.PNG'
 import './Carosel.css'
 
 const Carosel = () => {
 
     const projects = [
+        {
+            title: "CUE",
+            images: [cue1, cue3],
+            url: null,
+            status: "Coming Summer 2026",
+            summary: "A social community app designed to foster real-world, face-to-face human connection. Cross-platform iOS & Android, currently in development."
+        },
+        {
+            title: "Wordsmith",
+            images: [wordsmith1, wordsmith2],
+            url: null,
+            status: "In Development",
+            summary: "A mobile learning app that boosts retention through spaced-repetition study sessions. Import documents and absorb material through focused micro-reading."
+        },
         {
             title: "Mewdle",
             image: Mewdle,
@@ -27,12 +44,6 @@ const Carosel = () => {
             url: "https://perspectify.herokuapp.com/",
             summary: "A news reading platform designed to present multiple viewpoints and reduce information bias."
         },
-        {
-            title: "Blue v Red",
-            image: bvr,
-            url: "https://github.com/ckzard",
-            summary: "An in-progress product focused on competitive analytics and strategic decision support."
-        },
     ]
 
     return (
@@ -49,10 +60,20 @@ const Carosel = () => {
                                 <div>
                                     <h3>{item.title}</h3>
                                     <p>{item.summary}</p>
-                                    <a href={item.url} target="_blank" rel="noreferrer" className="btn-secondary">Open Project</a>
+                                    {item.url
+                                        ? <a href={item.url} target="_blank" rel="noreferrer" className="btn-secondary">Open Project</a>
+                                        : <span className="project-status-badge">{item.status}</span>
+                                    }
                                 </div>
 
-                                <img className="carousel-image" src={item.image} alt={`${item.title} preview`} />
+                                {item.images
+                                    ? <div className="carousel-phone-shots">
+                                        {item.images.map((img, i) => (
+                                            <img key={i} src={img} alt={`${item.title} screen ${i + 1}`} />
+                                        ))}
+                                      </div>
+                                    : <img className="carousel-image" src={item.image} alt={`${item.title} preview`} />
+                                }
                             </div>
                         </Carousel.Item>
                     )})}
