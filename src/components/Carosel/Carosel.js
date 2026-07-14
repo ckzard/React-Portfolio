@@ -1,6 +1,6 @@
 import React from 'react'
 import Carousel from "react-bootstrap/Carousel";
-import Mewdle from "../../assets/mewdle-shot.png";
+import Mewdle from "../../assets/mewdleshot.png";
 import perspectify from "../../assets/perspectify.png";
 import tracker from '../../assets/cadtracker-shot.png'
 import cue1 from '../../assets/CUE1.jpg'
